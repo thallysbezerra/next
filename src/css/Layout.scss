@@ -1,0 +1,23 @@
+// Layout - Grids and structure
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@include breakpoint(tabletPortrait) {
+    
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@include breakpoint(desktopLarge) {
+    
+    .container {
+        max-width: 1440px;
+    }
+
+}

@@ -1,0 +1,29 @@
+// Breakpoints - Media queries definitions
+
+@mixin breakpoint($point) {
+
+    @if $point == tabletPortrait {
+        @media (min-width: 768px)  { 
+            @content ; 
+        }
+    }
+    
+    @else if $point == tabletLandscape {
+        @media (min-width: 1024px) { 
+            @content ; 
+        }
+    }
+
+    @else if $point == desktopMedium {
+        @media (min-width: 1280px) { 
+            @content ; 
+        }
+    }
+
+    @else if $point == desktopLarge {
+        @media (min-width: 1440px) { 
+            @content ; 
+        }
+    }
+
+}
