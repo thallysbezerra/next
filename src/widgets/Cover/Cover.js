@@ -1,10 +1,10 @@
 import React from "react";
-import "./Hero.scss";
+import "./Cover.scss";
 import coverImage from './img/cover-image.png';
 
-const Hero = () => (
+const Cover = () => (
 
-	<section className="hero">
+	<section className="cover">
 
 		<img src={coverImage} alt=""/>
 
@@ -18,4 +18,4 @@ const Hero = () => (
 
 );
 
-export default Hero;
+export default Cover;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Header from "./components/Header/Header";
-import Hero from "./widgets/Hero/Hero";
+import Cover from "./widgets/Cover/Cover";
 
 import "./css/normalize.css";
 import "./css/Global.scss";
@@ -16,7 +16,7 @@ class Global extends Component {
 
 				<div className="container">
 
-					<Hero />
+					<Cover />
 
 				</div>
 				
