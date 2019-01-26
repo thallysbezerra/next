@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'NewJune';
+    src: url('newjune-regular-webfont.woff2') format('woff2'),
+         url('newjune-regular-webfont.woff') format('woff');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'NewJune';
+    src: url('newjune-medium-webfont.woff2') format('woff2'),
+         url('newjune-medium-webfont.woff') format('woff');
+    font-weight: 400;
+}

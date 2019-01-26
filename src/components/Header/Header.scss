@@ -1,0 +1,83 @@
+@import "../../css/Global.scss";
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    .header__logo {
+        img {
+            width: 60px;
+
+            @include breakpoint(tabletLandscape) {
+                width: 90px;
+            }
+        }
+    }
+
+    .header__nav {
+        display: none;
+
+        @include breakpoint(tabletLandscape) {
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            color: $grey;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 300;
+            margin: 0 25px;
+            position: relative;
+
+            &.active {
+                color: $black;
+                font-weight: bold;
+
+                &:before {
+                    background-color: $green;
+                }
+            }
+
+            &:before {
+                background-color: $grey;
+                border-radius: 50%;
+                content: '';
+                font-size: 56px;
+                height: 6px;
+                left: -20px;
+                position: absolute;
+                top: 6px;
+                width: 6px;
+            }
+        }
+    }
+
+    .header__button {
+        align-items: center;
+        background-color: $black;
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: $white;
+        display: flex;
+        font-size: 14px;
+        font-weight: 300 ;
+        height: 40px;
+        justify-content: center;
+        text-decoration: none;
+        width: 160px;
+
+        @include breakpoint(tabletLandscape) {
+            width: 165px;
+        }
+
+        @include breakpoint(desktopMedium) {
+            width: 185px;
+        }
+    }
+}

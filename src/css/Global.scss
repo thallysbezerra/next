@@ -1,4 +1,9 @@
 // Global - SASS files imports and global definitions
 
 @import "./Breakpoints";
+@import "./Colors";
 @import "./Layout";
+
+body {
+    font-family: "NewJune";
+}

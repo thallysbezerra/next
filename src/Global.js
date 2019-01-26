@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
 
 import "./css/normalize.css";
 import "./css/Global.scss";
@@ -15,10 +14,7 @@ class Global extends Component {
 				<Header />
 
 				<div className="container">
-					<p>Content</p>
 				</div>
-
-				<Footer />
 				
 			</div>
 		);
