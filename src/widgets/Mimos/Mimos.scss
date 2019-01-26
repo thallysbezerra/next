@@ -1,0 +1,84 @@
+@import "../../css/Global.scss";
+
+.mimos {
+    background-color: $grey-light;
+    padding: 50px 0;
+
+    .mimos__title {
+        font-size: 26px;
+        font-weight: 400;
+        max-width: 200px;
+    }
+
+    .mimos__subtitle {
+        font-size: 18px;
+        line-height: 27px;
+        margin: 0;
+    }
+
+    .mimos__link {
+        color: $black;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        margin: 20px 0 0;
+    }
+
+    .mimos__label {
+        display: block;
+        font-size: 14px;
+        margin: 40px 0 10px;
+    }
+
+    .mimos__toggle {
+        span {
+            background-color: $grey-light-b;
+            border-radius: 0 8px 8px 0;
+            display: inline-block;
+            font-weight: 400;
+            padding: 10px 15px;
+            margin-bottom: 40px;
+
+            &.active {
+                background-color: $green-b;
+                border-radius: 8px 0 0 8px;
+                pointer-events: none;
+            }
+        }
+    }
+
+    .mimos__category {
+        display: flex;
+        list-style: none;
+        margin: 0 -25px;
+        overflow-x: scroll;
+        padding: 0;
+
+        li {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0 25px;
+
+            &.active {
+                i,
+                .mimos__category-name {
+                    color: $black;
+                }
+            }
+            
+            i {
+                color: $grey-light-c;
+                font-size: 50px;
+                margin-bottom: 10px;
+            }
+
+            .mimos__category-name {
+                color: $grey-light-c;
+                font-size: 14px;
+            }
+        }
+    }
+}

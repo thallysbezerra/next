@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Header from "./components/Header/Header";
 import Cover from "./widgets/Cover/Cover";
+import Mimos from "./widgets/Mimos/Mimos";
 
 import "./css/normalize.css";
 import "./css/Global.scss";
@@ -14,11 +15,8 @@ class Global extends Component {
 
 				<Header />
 
-				<div className="container">
-
-					<Cover />
-
-				</div>
+				<Cover />
+				<Mimos />
 				
 			</div>
 		);

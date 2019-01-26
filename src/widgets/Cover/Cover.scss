@@ -10,10 +10,10 @@
 
     @include breakpoint(desktopMedium) {
         flex-direction: row-reverse;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
-    img {
+    .cover__image {
         width: 100%;
 
         @include breakpoint(tabletPortrait) {
@@ -21,7 +21,7 @@
         }
     }
 
-    h2 {
+    .cover__title {
         font-size: 36px;
         font-weight: 400;
         margin: 15px 0 10px;
@@ -41,7 +41,7 @@
         }
     }
 
-    p {
+    .cover__subtitle {
         font-size: 18px;
         line-height: 27px;
         margin: 0;
