@@ -6,7 +6,7 @@ const Header = () => (
 
 	<header className="header container">
 
-		<a href="#" className="header__logo"><img src={logo}></img></a>
+		<a href="#" className="header__logo"><img src={logo} alt="Logotipo Next"></img></a>
 		
 		<nav className="header__nav">
 			<ul>
