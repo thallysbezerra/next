@@ -19,7 +19,7 @@ header {
     .header__nav {
         display: none;
 
-        @include breakpoint(tabletLandscape) {
+        @include breakpoint(desktopMedium) {
             display: block;
         }
 
@@ -54,6 +54,10 @@ header {
                 position: absolute;
                 top: 6px;
                 width: 6px;
+            }
+
+            &:hover {
+                cursor: default;
             }
         }
     }

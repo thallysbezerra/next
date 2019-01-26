@@ -1,0 +1,72 @@
+@import "../../css/Global.scss";
+
+.hero {
+
+    @include breakpoint(tabletPortrait) {
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    @include breakpoint(desktopMedium) {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    img {
+        width: 100%;
+
+        @include breakpoint(tabletPortrait) {
+            max-width: 600px;
+        }
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: 400;
+        margin: 15px 0 10px;
+        max-width: 230px;
+
+        @include breakpoint(tabletPortrait) {
+            font-size: 42px;
+            font-weight: 300;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        @include breakpoint(desktopMedium) {
+            font-weight: 400;
+            max-width: 250px;
+            text-align: left;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 27px;
+        margin: 0;
+
+        @include breakpoint(tabletPortrait) {
+            text-align: center;
+        }
+
+        @include breakpoint(desktopMedium) {
+            max-width: 180px;
+            text-align: left;
+        }
+
+        &:last-child {
+            max-width: 200px;
+            padding-bottom: 40px;
+
+            @include breakpoint(tabletPortrait) {
+                max-width: 100%;
+            }
+
+            @include breakpoint(desktopMedium) {
+                max-width: 180px;
+                text-align: left;
+            }
+        }
+    }
+}
