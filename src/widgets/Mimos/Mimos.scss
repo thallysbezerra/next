@@ -239,3 +239,104 @@
         }
     }
 }
+
+.vantagens {
+    background: url("./img/card-hand.png") center bottom/170px no-repeat;
+    padding-bottom: 450px;
+
+    .vantagens__title {
+        font-weight: 400;
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    .vantagens__slider {
+        text-align: center;
+
+        .icon {
+            display: inline-block;
+            font-size: 125px;
+            margin: 5px auto 25px;
+            position: relative;
+            
+            .vantagens__badge {
+                background-color: $green-c;
+                border-radius: 14px;
+                font: bold 16px "NewJune";
+                padding: 5px 10px;
+                position: absolute;
+                right: 0;
+                top: -5px;
+                transform: translateX(40%);
+            }
+        }
+        
+        p {
+            margin: 0;
+            text-align: center;
+
+            &.vantagens__description {
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+
+            &.vantagens__discount {
+                font-size: 60px;
+                font-weight: 300;
+                margin-bottom: 5px;
+
+                &:before {
+                    content: 'R$';
+                    display: inline-block;
+                    font-size: 30px;
+                    font-weight: 400;
+                    margin-right: 10px;
+                    position: relative;
+                    top: -10px;
+                }
+            }
+
+            &.vantagens__period {
+                font-size: 24px;
+                font-weight: 400;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .vantagens__disclaimer {
+        color: $grey-b;
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .slick-slider {
+        margin: 0 25px;
+
+        .slick-dots li.slick-active button:before {
+            font-size: 12px;
+            line-height: 22px;
+        }
+    
+        .slick-prev,
+        .slick-next {
+            margin-top: -100px;
+        }
+        
+        .slick-prev:before,
+        .slick-next:before {
+            background: url("./img/arrow.png") center center/20px no-repeat;
+            content: '';
+            display: inline-block;
+            height: 12px;
+            width: 20px;
+        }
+    
+        .slick-next:before {
+            transform: rotate(180deg);
+        }
+    }
+}

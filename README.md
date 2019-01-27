@@ -33,6 +33,10 @@
 - Accessibility using tags attributes.
 - SEO using web semantic.
 
+**JavaScript**
+
+- Slider using react-slick and slick carousel dependencies with custom properties.
+
 # Instructions
 
 - `npm i` to install dependencies.

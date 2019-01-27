@@ -22,9 +22,22 @@ module.exports = {
 				]
 			},
 			{
-				test: /\.(png|svg)$/,
+				test: /\.(gif|png|svg)$/,
 				use: { loader: "file-loader" }
-			}
+			},
+			{
+				test: /.(ttf|otf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
+				exclude: /images/,
+				use: [
+				  {
+					loader: 'file-loader',
+					options: {
+					  outputPath: 'fonts/',
+					  name: '[name][hash].[ext]',
+					},
+				  },
+				],
+			  }
 			]
 		},
 	plugins: [
