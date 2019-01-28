@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import MediaQuery from 'react-responsive';
 import "./Mimos.scss";
 
 var settings = {
@@ -125,9 +126,42 @@ const Mimos = () => (
 
 			<h2 className="vantagens__title">É só ter conta no next que sobra $ de verdade</h2>
 
-			<VantagensSlider />
+				<div>
 
-			<p className="vantagens__disclaimer">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
+					<MediaQuery query="(max-width: 1279px)">
+						<VantagensSlider />
+					</MediaQuery>
+
+					<MediaQuery query="(min-width: 1280px)">
+						<div className="vantagens__slider">
+							<i className="icon icon-uber">
+								<span className="vantagens__badge">R$ 20 off</span>
+							</i>
+							<p className="vantagens__description">Vc pega um Uber por mês e economiza até</p>
+							<p className="vantagens__discount">XX</p>
+							<p className="vantagens__period">no ano*</p>
+						</div>
+						<div className="vantagens__slider">
+							<i className="icon icon-cinemark">
+								<span className="vantagens__badge">50% off</span>
+							</i>
+							<p className="vantagens__description">Vc vai no cinema todo mês e pode economizar</p>
+							<p className="vantagens__discount">XX</p>
+							<p className="vantagens__period">no ano*</p>
+						</div>
+						<div className="vantagens__slider">
+							<i className="icon icon-ifood">
+								<span className="vantagens__badge">$ 20 off</span>
+							</i>
+							<p className="vantagens__description">Vc pede iFood todo mês e economiza</p>
+							<p className="vantagens__discount">XX</p>
+							<p className="vantagens__period">no ano*</p>
+						</div>
+					</MediaQuery>
+				
+				</div>
+
+				<p className="vantagens__disclaimer">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.</p>
 
 		</section>
 	

@@ -76,6 +76,10 @@ header {
         text-decoration: none;
         width: 160px;
 
+        &:hover {
+            animation: gelatine .5s;
+        }
+
         @include breakpoint(tabletLandscape) {
             width: 165px;
         }
