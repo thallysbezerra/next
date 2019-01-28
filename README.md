@@ -32,8 +32,8 @@
 **HTML**
 
 - Accessibility using tags attributes.
-- react-responsive dependency to render similars components with different behavior in accordance with device, focused on performance and keeping the DOM clean..
-- SEO using web semantic.
+- react-responsive dependency to render similars components with different behavior in accordance with device, focused on performance and keeping the DOM clean.
+- SEO using web semantic and basic meta tags.
 
 **JavaScript**
 
