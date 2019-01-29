@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
-import MediaQuery from 'react-responsive';
+import MediaQuery from "react-responsive";
+import Modal from "../../components/Modal/Modal";
 import "./Mimos.scss";
 
 var settings = {
@@ -57,6 +58,7 @@ const Mimos = () => (
 					<h2 className="mimos__title">Apresentamos os Mimos</h2>
 					<p className="mimos__subtitle">Parceiros exclusivos com desconto só pra vc, que é next.</p>
 					<a href="#" className="mimos__link">Regras de uso</a>
+					<Modal />
 
 					<label className="mimos__label">Exibir Mimos para:</label>
 					<div className="mimos__toggle">
