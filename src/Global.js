@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Header from "./components/Header/Header";
 import Cover from "./widgets/Cover/Cover";
 import Mimos from "./widgets/Mimos/Mimos";
+import Vantagens from "./widgets/Vantagens/Vantagens";
 
 import "./css/normalize.css";
 import "./css/Global.scss";
@@ -17,6 +18,7 @@ class Global extends Component {
 
 				<Cover />
 				<Mimos />
+				<Vantagens />
 				
 			</div>
 		);

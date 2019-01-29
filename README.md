@@ -37,6 +37,8 @@
 
 **JavaScript**
 
+- Static texts imported as Json.
+- Lists using .map based on arrays in Json.
 - Modal behaviour controled by state based on onClick events.
 - Slider using react-slick and slick carousel dependencies with custom properties.
 

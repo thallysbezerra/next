@@ -1,0 +1,158 @@
+@import "../../css/Global.scss";
+
+.vantagens {
+    background: url("./img/card-hand.png") center bottom/170px no-repeat;
+    padding: 40px 0 450px;
+
+    @include breakpoint(tabletPortrait) {
+        background-position: right 10% bottom;
+        background-size: 240px;
+        padding: 60px 0 100px;
+
+        &> div {
+            max-width: 270px;
+            transform: translateX(15%);
+        }
+    }
+
+    @include breakpoint(desktopMedium) {
+        background-position: right bottom;
+        background-size: 335px;
+        padding: 100px 0 150px;
+
+        &.container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &> div {
+            display: flex;
+            margin-left: -35px;
+            max-width: 100%;
+            transform: none;
+        }
+    }
+
+
+    .vantagens__title {
+        font-weight: 400;
+        margin: 0 0 40px;
+        text-align: center;
+
+        @include breakpoint(tabletPortrait) {
+            font-size: 32px;
+            max-width: 360px;
+            margin: 0 auto 60px;
+        }
+        
+        @include breakpoint(desktopMedium) {
+            margin: 0 0 100px;
+            text-align: left;
+        }
+    }
+
+    .vantagens__slider {
+        text-align: center;
+
+        @include breakpoint(desktopMedium) {
+            margin-right: 30px;
+            max-width: 200px;
+        }
+
+        .icon {
+            display: inline-block;
+            font-size: 125px;
+            margin: 5px auto 25px;
+            position: relative;
+            
+            .vantagens__badge {
+                background-color: $green-c;
+                border-radius: 14px;
+                font: bold 16px "NewJune";
+                padding: 5px 10px;
+                position: absolute;
+                right: 0;
+                top: -5px;
+                transform: translateX(40%);
+            }
+        }
+        
+        p {
+            margin: 0;
+            text-align: center;
+
+            &.vantagens__description {
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+
+            &.vantagens__discount {
+                font-size: 60px;
+                font-weight: 300;
+                margin-bottom: 5px;
+
+                &:before {
+                    content: 'R$';
+                    display: inline-block;
+                    font-size: 30px;
+                    font-weight: 400;
+                    margin-right: 10px;
+                    position: relative;
+                    top: -10px;
+                }
+            }
+
+            &.vantagens__period {
+                font-size: 24px;
+                font-weight: 400;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .vantagens__disclaimer {
+        color: $grey-b;
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: 80px;
+        text-align: center;
+
+        @include breakpoint(tabletPortrait) {
+            max-width: 270px;
+            transform: translateX(15%);
+        }
+
+        @include breakpoint(desktopMedium) {
+            margin-left: -40px;
+            text-align: left;
+        }
+    }
+
+    .slick-slider {
+        margin: 0 25px;
+
+        .slick-dots li.slick-active button:before {
+            font-size: 12px;
+            line-height: 22px;
+        }
+    
+        .slick-prev,
+        .slick-next {
+            margin-top: -100px;
+        }
+        
+        .slick-prev:before,
+        .slick-next:before {
+            background: url("./img/arrow.png") center center/20px no-repeat;
+            content: '';
+            display: inline-block;
+            height: 12px;
+            width: 20px;
+        }
+    
+        .slick-next:before {
+            transform: rotate(180deg);
+        }
+    }
+}

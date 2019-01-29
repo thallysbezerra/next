@@ -1,0 +1,30 @@
+{
+    "title": "É só ter conta no next que sobra $ de verdade",
+    "vantagens": [
+        {
+            "id": 1,
+            "icon": "icon-uber",
+            "badge": "R$ 20 off",
+            "description": "Vc pega um Uber por mês e economiza até",
+            "discount": "240",
+            "period": "no ano*"
+        },
+        {
+            "id": 2,
+            "icon": "icon-cinemark",
+            "badge": "50% off",
+            "description": "Vc vai no cinema todo mês e pode economizar",
+            "discount": "432",
+            "period": "no ano*"
+        },
+        {
+            "id": 3,
+            "icon": "icon-ifood",
+            "badge": "$ 20 off",
+            "description": "Vc pede iFood todo mês e economiza",
+            "discount": "240",
+            "period": "no ano*"
+        }
+    ],
+    "disclaimer": "Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt."
+}

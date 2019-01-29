@@ -1,0 +1,236 @@
+{
+	"debito": [
+		{
+			"id": 1,
+			"category": "alimentacao",
+			"icon": "icon-food",
+			"name": "Alimentação",
+			"subcategory": [
+				{
+					"icon": "icon-ifood",
+					"text": "<b>R$ 20</b> off por mês"
+				},
+				{
+					"icon": "icon-mc",
+					"text": "<b>Desconto</b> especial"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"category": "educacao",
+			"icon": "icon-college",
+			"name": "Educação",
+			"subcategory": [
+				{
+					"icon": "icon-uber",
+					"text": "<b>30%</b> off nos cursos de inglês e espanhol"
+				},
+				{
+					"icon": "icon-uber",
+					"text": "Intercâmbio com <b>desconto</b>"
+				},
+				{
+					"icon": "icon-uber",
+					"text": "<b>Desconto</b> em cursos de inovação"
+				}
+			]
+		},
+		{
+			"id": 3,
+			"category": "entretenimento",
+			"icon": "icon-entertainment",
+			"name": "Entretenimento",
+			"subcategory": [
+				{
+					"icon": "icon-cinemark",
+					"text": "<b>50%</b> de desconto no ingresso"
+				},
+				{
+					"icon": "icon-cinemark",
+					"text": "<b>20%</b> de descoto em compras online"
+				}
+			]
+		},
+		{
+			"id": 4,
+			"category": "viagens",
+			"icon": "icon-travel",
+			"name": "Viagens",
+			"subcategory": [
+				{
+					"icon": "icon-uber",
+					"text": "Intercâmbio com <b>desconto</b>"
+				}
+			]
+		}
+	],
+	"credito": [
+		{
+			"id": 5,
+			"category": "alimentacao",
+			"icon": "icon-food",
+			"name": "Alimentação",
+			"subcategory": [
+				{
+					"icon": "icon-ifood",
+					"text": "<b>R$ 20</b> off por mês"
+				},
+				{
+					"icon": "icon-mc",
+					"text": "Cupons <b>exclusivos</b> pra você"
+				},
+				{
+					"icon": "icon-mc",
+					"text": "<b>Desconto</b> especial"
+				}
+			]
+		},
+		{
+			"id": 6,
+			"category": "compras",
+			"icon": "icon-shop",
+			"name": "Compras",
+			"subcategory": [
+				{
+					"icon": "icon-mc",
+					"text": "<b>15%</b> de desconto em livros na loga online"
+				},
+				{
+					"icon": "icon-mc",
+					"text": "Desconto de <b>20%</b> nas compras pelo app"
+				},
+				{
+					"icon": "icon-mc",
+					"text": "Colecionáveis e action figure com <b>15%</b> off"
+				},
+				{
+					"icon": "icon-mc",
+					"text": "<b>10%</b> no plano de assinatura"
+				},
+				{
+					"icon": "icon-mc",
+					"text": "<b>10%</b> de desconto na loja online"
+				},
+				{
+					"icon": "icon-mc",
+					"text": "<b>10%</b> de desconto na loja online"
+				},
+				{
+					"icon": "icon-mc",
+					"text": "<b>Desconto</b> em celulares e pacote office"
+				},
+				{
+					"icon": "icon-mc",
+					"text": "<b>Desconto</b> no Console Xbox One S 1TB"
+				}
+			]
+		},
+		{
+			"id": 7,
+			"category": "educacao",
+			"icon": "icon-college",
+			"name": "Educação",
+			"subcategory": [
+				{
+					"icon": "icon-uber",
+					"text": "<b>30%</b> off nos cursos de inglês e espanhol"
+				},
+				{
+					"icon": "icon-uber",
+					"text": "Intercâmbio com <b>desconto</b>"
+				},
+				{
+					"icon": "icon-uber",
+					"text": "<b>Desconto</b> em cursos de inovação"
+				},
+				{
+					"icon": "icon-uber",
+					"text": "<b>50%</b> off curso online"
+				}
+			]
+		},
+		{
+			"id": 8,
+			"category": "entretenimento",
+			"icon": "icon-entertainment",
+			"name": "Entretenimento",
+			"subcategory": [
+				{
+					"icon": "icon-cinemark",
+					"text": "<b>50%</b> de desconto no ingresso"
+				},
+				{
+					"icon": "icon-cinemark",
+					"text": "<b>15%</b> off no ingresso"
+				},
+				{
+					"icon": "icon-cinemark",
+					"text": "Ingressos com <b>50%</b> de desconto"
+				},
+				{
+					"icon": "icon-cinemark",
+					"text": "<b>20%</b> de desconto em compras online"
+				},
+				{
+					"icon": "icon-cinemark",
+					"text": "<b>50%</b> de desconto no ingresso"
+				},
+				{
+					"icon": "icon-cinemark",
+					"text": "<b>20%</b> de desconto em compras online"
+				},
+				{
+					"icon": "icon-cinemark",
+					"text": "<b>Desconto</b> pra curtir várias opções de lazer!"
+				}
+			]
+		},
+		{
+			"id": 9,
+			"category": "servicos",
+			"icon": "icon-services",
+			"name": "Serviços",
+			"subcategory": [
+				{
+					"icon": "icon-ifood",
+					"text": "Até <b>50%</b> de desconto na faxina"
+				}
+			]
+		},
+		{
+			"id": 10,
+			"category": "transporte",
+			"icon": "icon-travel",
+			"name": "Viagens",
+			"subcategory": [
+				{
+					"icon": "icon-uber",
+					"text": "Até <b>R$ 20</b> de desconto em uma viagem"
+				},
+				{
+					"icon": "icon-uber",
+					"text": "<b>Desconto</b> em corridas"
+				}
+			]
+		},
+		{
+			"id": 11,
+			"category": "viagens",
+			"icon": "icon-travel",
+			"name": "Viagens",
+			"subcategory": [
+				{
+					"icon": "icon-cinemark",
+					"text": "<b>R$ 150</b> ou <b>12%</b> off na hospedagem"
+				},
+				{
+					"icon": "icon-cinemark",
+					"text": "Intercâmbio com <b>desconto</b>"
+				}
+			]
+		}
+	]
+}
+  
+  
