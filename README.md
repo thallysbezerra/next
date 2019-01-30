@@ -32,12 +32,12 @@
 **HTML**
 
 - Accessibility using tags attributes.
+- Hardcoded texts imported as Json.
 - react-responsive dependency to render similars components with different behavior in accordance with device, focused on performance and keeping the DOM clean.
 - SEO using web semantic and basic meta tags.
 
 **JavaScript**
 
-- Static texts imported as Json.
 - Lists using .map based on arrays in Json.
 - Modal behaviour controled by state based on onClick events.
 - Slider using react-slick and slick carousel dependencies with custom properties.
