@@ -213,7 +213,12 @@
         }
 
         li {
+            display: none;
             padding: 0 25px;
+
+            &.active {
+                display: list-item;
+            }
 
             @include breakpoint(tabletPortrait) {
                 padding: 0 60px;

@@ -20,6 +20,7 @@
 				"category": "alimentacao",
 				"icon": "icon-food",
 				"name": "Alimentação",
+				"className": "active",
 				"subcategory": [
 					{
 						"icon": "icon-ifood",
@@ -36,6 +37,7 @@
 				"category": "educacao",
 				"icon": "icon-college",
 				"name": "Educação",
+				"className": "",
 				"subcategory": [
 					{
 						"icon": "icon-uber",
@@ -56,6 +58,7 @@
 				"category": "entretenimento",
 				"icon": "icon-entertainment",
 				"name": "Entretenimento",
+				"className": "",
 				"subcategory": [
 					{
 						"icon": "icon-cinemark",
@@ -72,6 +75,7 @@
 				"category": "viagens",
 				"icon": "icon-travel",
 				"name": "Viagens",
+				"className": "",
 				"subcategory": [
 					{
 						"icon": "icon-uber",
@@ -89,6 +93,7 @@
 				"category": "alimentacao",
 				"icon": "icon-food",
 				"name": "Alimentação",
+				"className": "active",
 				"subcategory": [
 					{
 						"icon": "icon-ifood",
@@ -109,6 +114,7 @@
 				"category": "compras",
 				"icon": "icon-shop",
 				"name": "Compras",
+				"className": "",
 				"subcategory": [
 					{
 						"icon": "icon-mc",
@@ -149,6 +155,7 @@
 				"category": "educacao",
 				"icon": "icon-college",
 				"name": "Educação",
+				"className": "",
 				"subcategory": [
 					{
 						"icon": "icon-uber",
@@ -173,6 +180,7 @@
 				"category": "entretenimento",
 				"icon": "icon-entertainment",
 				"name": "Entretenimento",
+				"className": "",
 				"subcategory": [
 					{
 						"icon": "icon-cinemark",
@@ -209,6 +217,7 @@
 				"category": "servicos",
 				"icon": "icon-services",
 				"name": "Serviços",
+				"className": "",
 				"subcategory": [
 					{
 						"icon": "icon-ifood",
@@ -221,6 +230,7 @@
 				"category": "transporte",
 				"icon": "icon-transportation",
 				"name": "Transporte",
+				"className": "",
 				"subcategory": [
 					{
 						"icon": "icon-uber",
@@ -237,6 +247,7 @@
 				"category": "viagens",
 				"icon": "icon-travel",
 				"name": "Viagens",
+				"className": "",
 				"subcategory": [
 					{
 						"icon": "icon-cinemark",

@@ -48,25 +48,32 @@ export default class Mimos extends Component {
 			showCredito: true
 		})
 	}
+
+	showSubcategory() { 
+		this.setState({ 
+			showDebito: false,
+			showCredito: true
+		})
+	}
 	
 	render() {
 
 		let categoryDebito = dataMimos.debito.categories.map((item, index) =>
-			<li className="" key={index}>
+			<li className={item.className} key={index} onClick={this.showSubcategory}>
 				<i className={`icon ${item.icon}`}/>
 				<div className="mimos__category-name">{item.name}</div>
 			</li>
 		);
 
 		let categoryCredito = dataMimos.credito.categories.map((item, index) =>
-			<li className="" key={index}>
+			<li className={item.className} key={index}>
 				<i className={`icon ${item.icon}`}/>
 				<div className="mimos__category-name">{item.name}</div>
 			</li>
 		);
 
 		let subcategoriesDebito = dataMimos.debito.categories.map((items, index) =>
-			<li key={index}>
+			<li className={items.className} key={index}>
 				{items.subcategory.map((item, index) =>
 					<div key={index}>
 						<i className={`icon ${item.icon}`}></i>
@@ -79,7 +86,7 @@ export default class Mimos extends Component {
 		);
 
 		let subcategoriesCredito = dataMimos.credito.categories.map((items, index) =>
-			<li key={index}>
+			<li className={items.className} key={index}>
 				{items.subcategory.map((item, index) =>
 					<div key={index}>
 						<i className={`icon ${item.icon}`}></i>
@@ -146,8 +153,13 @@ export default class Mimos extends Component {
 						</div>
 
 						<ul className="mimos__subcategory">
-							{subcategoriesDebito}
-							{subcategoriesCredito}
+
+							{this.state.showDebito ? (
+								subcategoriesDebito
+							) : (
+								subcategoriesCredito
+							)}
+							
 						</ul>
 
 					</div>
