@@ -243,7 +243,11 @@
                 p {
                     font-size: 14px;
                     margin: 0;
-                    text-align: center;
+                    text-align: left;
+
+                    @include breakpoint(tabletPortrait) {
+                        text-align: center;
+                    }
                 }
             }
 

@@ -1,0 +1,30 @@
+{
+    "altImage": "Logotipo Next",
+    "nav": [
+        {
+            "linkName": "next",
+            "className": ""
+        },
+        {
+            "linkName": "Flow",
+            "className": ""
+        },
+        {
+            "linkName": "Vaquinha",
+            "className": ""
+        },
+        {
+            "linkName": "Objetivos",
+            "className": ""
+        },
+        {
+            "linkName": "Mimos",
+            "className": "active"
+        },
+        {
+            "linkName": "Propostas",
+            "className": ""
+        }
+    ],
+    "button": "Abra sua conta"
+}

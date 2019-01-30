@@ -1,21 +1,23 @@
-import React from "react";
+import React, { Component } from "react";
+import dataCover from "./Cover-mock.json";
 import "./Cover.scss";
 import coverImage from './img/cover-image.png';
 
-const Cover = () => (
+export default class Cover extends Component {
 
-	<section className="cover container small">
-
-		<img src={coverImage} alt="Mulher emponderada" className="cover__image"/>
-
-		<div>
-			<h2 className="cover__title">Pra ganhar descontos exclusivos, vem pro next</h2>
-			<p className="cover__subtitle">Não é programa de ponto.</p>
-			<p className="cover__subtitle">É so nosso jeitinho de te mimar &lt;3</p>
-		</div>
-
-	</section>
-
-);
-
-export default Cover;
+	render() {
+		return (
+			<section className="cover container small">
+		
+				<img src={coverImage} alt={dataCover.altImage} className="cover__image"/>
+		
+				<div>
+					<h2 className="cover__title">{dataCover.title}</h2>
+					<p className="cover__subtitle">{dataCover.subtitle1}</p>
+					<p className="cover__subtitle">{dataCover.subtitle2}</p>
+				</div>
+		
+			</section>
+		)
+	}
+};

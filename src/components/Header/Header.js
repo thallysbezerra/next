@@ -1,28 +1,32 @@
-import React from "react";
+import React, { Component } from "react";
+import dataHeader from "./Header-mock.json";
 import "./Header.scss";
 import logo from "./img/logo.svg"
 
-const Header = () => (
+export default class Header extends Component {
 
-	<header className="header container">
+	render () {
 
-		<a href="#" className="header__logo"><img src={logo} alt="Logotipo Next"></img></a>
+		let navLinks = dataHeader.nav.map((item, index) =>
+			<li className={item.className} key={index}>
+				{item.linkName}
+			</li>
+		);
+
+		return (
+			<header className="header container">
 		
-		<nav className="header__nav">
-			<ul>
-				<li>next</li>
-				<li>Flow</li>
-				<li>Vaquinha</li>
-				<li>Objetivos</li>
-				<li className="active">Mimos</li>
-				<li>Propostas</li>
-			</ul>
-		</nav>
-
-		<a href="#" className="header__button">Abra sua conta</a>
-
-	</header>
-
-);
-
-export default Header;
+				<a href="#" className="header__logo"><img src={logo} alt={dataHeader.altImage}></img></a>
+				
+				<nav className="header__nav">
+					<ul>
+						{navLinks}
+					</ul>
+				</nav>
+		
+				<a href="#" className="header__button">{dataHeader.button}</a>
+		
+			</header>
+		)
+	}
+};

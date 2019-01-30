@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import MediaQuery from "react-responsive";
-import data from "./Vantagens-mock.json";
+import dataVantagens from "./Vantagens-mock.json";
 import "./Vantagens.scss";
 
 export default class Vantagens extends Component {
@@ -18,7 +18,7 @@ export default class Vantagens extends Component {
 			slidesToScroll: 1
 		};
 		
-		const vantagens = data.vantagens.map((item, index) =>
+		const vantagens = dataVantagens.vantagens.map((item, index) =>
 			<div className="vantagens__slider" key={index}>
 				<i className={`icon ${item.icon}`}>
 					<span className="vantagens__badge">{item.badge}</span>
@@ -32,7 +32,7 @@ export default class Vantagens extends Component {
 		return (
             <section className="vantagens container small">
 
-                <h2 className="vantagens__title">{data.title}</h2>
+                <h2 className="vantagens__title">{dataVantagens.title}</h2>
 
                 <div>
 
@@ -48,7 +48,7 @@ export default class Vantagens extends Component {
 
                 </div>
 
-                <p className="vantagens__disclaimer">{data.disclaimer}</p>
+                <p className="vantagens__disclaimer">{dataVantagens.disclaimer}</p>
 
             </section>
 		)
