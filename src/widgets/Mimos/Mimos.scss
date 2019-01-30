@@ -86,7 +86,6 @@
         .mimos__toggle {
             span {
                 background-color: $grey-light-b;
-                border-radius: 0 8px 8px 0;
                 display: inline-block;
                 font-weight: bold;
                 padding: 10px 15px;
@@ -104,8 +103,15 @@
 
                 &.active {
                     background-color: $green-b;
-                    border-radius: 8px 0 0 8px;
                     pointer-events: none;
+                }
+
+                &:first-of-type {
+                    border-radius: 8px 0 0 8px;
+                }
+
+                &:last-of-type {
+                    border-radius: 0 8px 8px 0;
                 }
             }
         }

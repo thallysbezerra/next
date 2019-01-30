@@ -8,11 +8,15 @@ export default class Mimos extends Component {
         super(props);
 
         this.state = { 
-            showModal: false,
+			showModal: false,
+			showDebito: true,
+			showCredito: false,
         }
         
 		this.showModal = this.showModal.bind(this);
 		this.hideModal = this.hideModal.bind(this);
+		this.showDebito = this.showDebito.bind(this);
+		this.showCredito = this.showCredito.bind(this);
 		
 	}
 	
@@ -29,6 +33,20 @@ export default class Mimos extends Component {
 			showModal: false
 		})
 		document.body.style.overflow = "visible"
+	}
+
+	showDebito() { 
+		this.setState({ 
+			showDebito: true,
+			showCredito: false
+		})
+	}
+
+	showCredito() { 
+		this.setState({ 
+			showDebito: false,
+			showCredito: true
+		})
 	}
 	
 	render() {
@@ -108,14 +126,21 @@ export default class Mimos extends Component {
 							</div>
 
 							<label className="mimos__label">{dataMimos.label}</label>
+
 							<div className="mimos__toggle">
-								<span className="active">{dataMimos.debito.paymentType}</span>
-								<span>{dataMimos.credito.paymentType}</span>
+
+								<span className={this.state.showDebito ? 'active' : ''} onClick={this.showDebito}>
+									{dataMimos.debito.paymentType}
+								</span>
+								
+								<span className={this.state.showDebito ? '' : 'active'} onClick={this.showCredito}>
+									{dataMimos.credito.paymentType}
+								</span>
+							
 							</div>
 
 							<ul className="mimos__category">
-								{categoryDebito}
-								{categoryCredito}
+								{this.state.showDebito ? categoryDebito : categoryCredito}
 							</ul>
 
 						</div>
