@@ -11,6 +11,7 @@ export default class Mimos extends Component {
 			showModal: false,
 			showDebito: true,
 			showCredito: false,
+			teste: dataMimos.debito.categories[0].className
         }
         
 		this.showModal = this.showModal.bind(this);
@@ -49,17 +50,10 @@ export default class Mimos extends Component {
 		})
 	}
 
-	showSubcategory() { 
-		this.setState({ 
-			showDebito: false,
-			showCredito: true
-		})
-	}
-	
 	render() {
 
 		let categoryDebito = dataMimos.debito.categories.map((item, index) =>
-			<li className={item.className} key={index} onClick={this.showSubcategory}>
+			<li className={item.className} key={index}>
 				<i className={`icon ${item.icon}`}/>
 				<div className="mimos__category-name">{item.name}</div>
 			</li>
